@@ -1,0 +1,30 @@
+# SRCNN Configuration
+
+# Random seed for reproducibility
+seed: 42
+
+# Data configuration
+data:
+  lr_dir: "data/processed/lr"
+  hr_dir: "data/processed/hr"
+
+# Model configuration
+model:
+  name: "srcnn"
+  type: "srcnn"  # srcnn or fsrcnn
+  scale: 4  # Scale factor
+  pretrained: null  # Path to pretrained model
+
+# Training configuration
+training:
+  num_epochs: 100
+  batch_size: 16
+  num_workers: 4
+  lr: 0.001  # Learning rate
+  lr_steps: [50, 75]  # Steps to reduce learning rate
+  lr_gamma: 0.1  # Learning rate decay factor
+  log_dir: "logs/srcnn"
+  checkpoint_dir: "checkpoints/srcnn"
+  sample_dir: "samples/srcnn"
+  checkpoint_interval: 10  # Save checkpoint every N epochs
+  sample_interval: 1000  # Generate samples every N iterations 

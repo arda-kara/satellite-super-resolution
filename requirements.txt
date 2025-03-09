@@ -1,0 +1,26 @@
+# Core dependencies
+torch>=1.9.0
+torchvision>=0.10.0
+numpy>=1.19.5
+opencv-python>=4.5.3
+Pillow>=8.3.1
+matplotlib>=3.4.3
+tqdm>=4.62.2
+
+# Web application
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-multipart>=0.0.5
+Jinja2>=3.0.1
+
+# Satellite imagery processing
+rasterio>=1.2.6
+scikit-image>=0.18.3
+
+# Utilities
+pyyaml>=5.4.1
+tensorboard>=2.6.0
+
+# Optional: CUDA support
+# Install appropriate version based on your CUDA version
+# torch-cuda 

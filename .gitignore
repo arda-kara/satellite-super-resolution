@@ -1,0 +1,113 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_metadata
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Model checkpoints and data
+checkpoints/
+*.pth
+*.pt
+*.h5
+*.onnx
+*.pkl
+*.bin
+*.weights
+*.pb
+*.tflite
+*.mlmodel
+model_weights/
+saved_models/
+
+# Results and processed data
+results/
+static/results/
+data/processed/
+data/raw/
+# Uncomment if you don't want to track sample data
+# !data/raw/sample_*.jpg
+
+# Logs
+logs/
+*.log
+tensorboard/
+runs/
+events.out.tfevents.*
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large media files
+*.mp4
+*.tif
+*.tiff
+*.geotiff
+*.jpg
+*.jpeg
+*.png
+*.gif
+# Uncomment if you want to track sample images
+# !samples/*.jpg
+# !samples/*.png
+
+# Configuration files with sensitive information
+config.ini
+secrets.yaml
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+*.swp
+*.swo
+*~
+tmp/
+temp/ 

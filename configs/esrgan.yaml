@@ -1,0 +1,36 @@
+# ESRGAN Configuration
+
+# Random seed for reproducibility
+seed: 42
+
+# Data configuration
+data:
+  lr_dir: "data/processed/lr"
+  hr_dir: "data/processed/hr"
+
+# Model configuration
+model:
+  name: "esrgan"
+  nf: 64  # Number of filters
+  nb: 23  # Number of RRDB blocks
+  scale: 4  # Scale factor
+  pretrained_g: null  # Path to pretrained generator model
+  pretrained_d: null  # Path to pretrained discriminator model
+
+# Training configuration
+training:
+  num_epochs: 50
+  batch_size: 16
+  num_workers: 4
+  lr_g: 0.0001  # Learning rate for generator
+  lr_d: 0.0001  # Learning rate for discriminator
+  lr_steps: [25, 40]  # Steps to reduce learning rate
+  lr_gamma: 0.5  # Learning rate decay factor
+  pixel_weight: 1.0  # Weight for pixel loss
+  perceptual_weight: 1.0  # Weight for perceptual loss
+  gan_weight: 0.005  # Weight for GAN loss
+  log_dir: "logs/esrgan"
+  checkpoint_dir: "checkpoints/esrgan"
+  sample_dir: "samples/esrgan"
+  checkpoint_interval: 5  # Save checkpoint every N epochs
+  sample_interval: 1000  # Generate samples every N iterations 
